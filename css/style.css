@@ -80,7 +80,7 @@ section {
 .img img {
     width: 25%;
 }
-@media only screen and (min-width: 600px) and (max-width: 1200px) {
+@media only screen and (max-width: 600px) {
     section {
         height: auto;
     }
