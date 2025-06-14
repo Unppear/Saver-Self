@@ -1,0 +1,122 @@
+/*Declarando a fonte do site*/
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+/*Resetando o documento*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+/*Cores usadas no documento*/
+:root {
+    --bg-color: #fff3db;
+    --text-color: #4f7c75;
+}
+/*Alterando a altura do documento*/
+html, body {
+    height: -webkit-fill-available;
+}
+/*Seção*/
+section {
+    background-color: var(--bg-color);
+    height: -webkit-fill-available;
+}
+/*Container de centralização*/
+.center {
+    margin: 0 auto;
+    padding: 3% 6% 0;
+    display: flex;
+}
+/*Container de texto e o container das imagens*/
+.text, .img {
+    width: 50%;
+}
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Cor dos textos*/
+.text h1, .text h2, .text p {
+    color: var(--text-color);
+}
+/*Título principal*/
+.text h1 {
+    font-size: 90px;
+}
+/*Título secundário*/
+.text h2 {
+    font-size: 40px;
+}
+/*Paragráfo*/
+.text p {
+    margin: 15px 0;
+    font-size: 25px;
+}
+/*Botão da pagina inicial*/
+.text button {
+    border: 0;
+    display: inline-block;
+    width: 33%;
+    height: 45px;
+    font-size: 20px;
+    border-radius: 13px;
+    cursor: pointer;
+    transition: 0.7s;
+    color: var(--bg-color);
+    background-color: var(--text-color);
+}
+.text button:hover {
+    transform: scale(1.05);
+}
+/*Grupo de imagens*/
+.group {
+    display: flex;
+}
+/*Definindo a largura das imagens*/
+.img img {
+    width: 25%;
+}
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+    section {
+        height: auto;
+    }
+    .initial_page {
+        flex-wrap: wrap;
+    } 
+    /*Container de texto e o container das imagens*/
+    .text, .img {
+        width: 100%;
+    }
+    /*Título principal*/
+    .text h1 {
+        font-size: 70px;
+    }
+    /*Título secundário*/
+    .text h2 {
+        font-size: 40px;
+    }
+    /*Paragráfo*/
+    .text p {
+        margin: 10px 0;
+        font-size: 20px;
+    }
+    /*Botão da pagina inicial*/
+    .text button {
+        width: 35%;
+        height: 40px;
+        font-size: 17px;
+    }
+    /*Grupo de imagens*/
+    .group {
+        display: flex;
+        justify-content: center;
+    }
+    /*Definindo a largura das imagens*/
+    .img img {
+        width: 40%;
+    }
+}
